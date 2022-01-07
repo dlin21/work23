@@ -8,12 +8,12 @@ int main() {
 
     while (1) {
         // Prompts user for input
-        printf("Relay Message to Server: ");
+        printf("Message To Server: ");
         fgets(line, BUFFER_SIZE, stdin);
-
         write(sd, line, sizeof(line)); // send data to server
         read(sd, line, sizeof(line)); // reads processed data from server
         printf("Response From Server: %s\n", line); // displays processed data to server
     }
+    return 0;
 }
 
