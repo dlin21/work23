@@ -14,5 +14,4 @@ int main() {
         read(sd, line, sizeof(line)); // reads processed data from server
         printf("response: %s\n", line); // displays processed data to server
     }
-    return 0;
 }
